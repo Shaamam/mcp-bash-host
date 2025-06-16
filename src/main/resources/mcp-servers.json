@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "s1": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "/Users/shaama/Documents/muthu/mcp-host-0.0.1-SNAPSHOT.jar"
+      ]
+    }
+  }
+}

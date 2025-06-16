@@ -31,6 +31,13 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-webflux'
     implementation 'org.springframework.ai:spring-ai-starter-model-vertex-ai-gemini'
+
+    // https://mvnrepository.com/artifact/org.springframework.ai/spring-ai-starter-mcp-server
+    implementation 'org.springframework.ai:spring-ai-starter-mcp-server'
+
+    // https://mvnrepository.com/artifact/org.springframework.ai/spring-ai-starter-mcp-client-webflux
+    implementation 'org.springframework.ai:spring-ai-starter-mcp-client'
+
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
