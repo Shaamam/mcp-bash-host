@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Header } from "./layout/header/Header";
+import { Footer } from "./layout/footer/Footer";
+import {ChatWindow} from "./components/chat/ChatWindow";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <div className="min-h-screen flex flex-col justify-between overflow-visible bg-gray-50">
+          <div className="sticky top-0 z-50" id="commonComponents">
+            <Header/>
+          </div>
+          <main className="flex-1 w-full">
+            <ChatWindow />
+          </main>
+          <Footer/>
+        </div>
+      </div>
   );
 }
 

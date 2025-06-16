@@ -29,6 +29,7 @@ public class ChatService {
 
         return new ChatBotResponse(question, chatClient
                 .prompt(question)
+                .system("Just return the answer as text not as markdown or json")
                 .call()
                 .content());
     }

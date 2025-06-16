@@ -4,7 +4,7 @@ i:
 start:
 	cd frontend && npm start
 
-b:
+cb:
 	./gradlew clean build
 
 run:
